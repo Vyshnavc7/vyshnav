@@ -314,7 +314,6 @@ a:hover {
 /*------/ Back to top button /------*/
 .back-to-top {
   position: fixed;
-  
   display: none;
   background: #0078ff;
   color: #fff;
@@ -331,7 +330,7 @@ a:hover {
 }
 
 .back-to-top i {
-  padding-top: 4px;
+  padding-top: 7px;
   color: #fff;
 }
 
@@ -517,14 +516,14 @@ a:hover {
 }
 
 .fa {
-  padding: 11px;
+    padding: 11px;
     font-size: 19px;
     width: -1px;
     text-align: center;
     text-decoration: none;
     margin: 4px 3px;
     border-radius: 48%;
-    padding-left: 8px;
+    padding-left: 9px;
 }
 }
 
@@ -535,6 +534,7 @@ a:hover {
 .fa-facebook {
   background: #3B5998;
   color: white;
+  
 }
 
 .fa-twitter {
