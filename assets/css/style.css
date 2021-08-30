@@ -314,6 +314,7 @@ a:hover {
 /*------/ Back to top button /------*/
 .back-to-top {
   position: fixed;
+  
   display: none;
   background: #0078ff;
   color: #fff;
@@ -330,7 +331,7 @@ a:hover {
 }
 
 .back-to-top i {
-  padding-top: 12px;
+  padding-top: 4px;
   color: #fff;
 }
 
@@ -515,6 +516,51 @@ a:hover {
   color: #fff;
 }
 
+.fa {
+  padding: 11px;
+    font-size: 19px;
+    width: -1px;
+    text-align: center;
+    text-decoration: none;
+    margin: 4px 3px;
+    border-radius: 48%;
+    padding-left: 8px;
+}
+}
+
+.fa:hover {
+    opacity:1 ;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
 .navbar-b.navbar-reduce {
   transition: all .5s ease-in-out;
   background-color: #e0dede;
