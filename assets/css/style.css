@@ -10,7 +10,7 @@
 --------------------------------------------------------------*/
 body {
   background-color: #f5f5f5;
-  color: #4e4e4e;
+  color: #000000;
 }
 
 h1,
@@ -90,7 +90,7 @@ a:hover {
 }
 
 .overlay-mf {
-  background-color: #0078ff;
+  background-color: #1d2023;
 }
 
 .overlay-mf {
@@ -188,7 +188,7 @@ a:hover {
 .box-shadow-full {
   padding: 3rem 1.25rem;
   position: relative;
-  background-color: #fff;
+  background-color: #f#bbb6b6ff;
   margin-bottom: 3rem;
   z-index: 2;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.06), 0 2px 5px 0 rgba(0, 0, 0, 0.2);
@@ -517,7 +517,7 @@ a:hover {
 
 .navbar-b.navbar-reduce {
   transition: all .5s ease-in-out;
-  background-color: #fff;
+  background-color: #e0dede;
   padding-top: 15px;
   padding-bottom: 15px;
 }
@@ -725,6 +725,8 @@ a:hover {
 .about-mf .box-shadow-full {
   padding-top: 4rem;
   padding-bottom: 4rem;
+  background-color: #c1c1c1;
+  border-radius: 7px ;
 }
 
 .about-mf .about-img {
@@ -1360,7 +1362,7 @@ footer {
   text-align: center;
   color: #fff;
   padding: 25px 0;
-  background: #0062d3;
+  background: #495057;
 }
 
 footer .copyright {

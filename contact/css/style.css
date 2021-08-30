@@ -8224,8 +8224,8 @@ textarea.form-control {
   width: 100%; }
 
 .contact-wrap {
-  background: #fff;
-  border-radius: 10px; }
+  #c7c5c5
+  border-radius: 1px; }
 
 .info-wrap h3 {
   color: #fff; }
@@ -8314,3 +8314,7 @@ textarea.form-control {
   display: none;
   font-size: 16px;
   font-weight: 500; }
+
+  .get{
+    background-color: #002752;
+  }
