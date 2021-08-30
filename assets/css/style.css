@@ -559,7 +559,7 @@ a:hover {
 }
 .navbar-b.navbar-reduce {
   transition: all .5s ease-in-out;
-  background-color: #e0dede;
+  background-color: #fff;
   padding-top: 15px;
   padding-bottom: 15px;
 }
