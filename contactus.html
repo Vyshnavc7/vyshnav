@@ -37,7 +37,7 @@
 			  <div class="navbar-collapse collapse justify-content-end" id="navbarDefault">
 				<ul class="navbar-nav">
 				  <li class="nav-item">
-					<a class="nav-link js-scroll active" href="index.html">Home</a>
+					<a class="nav-link js-scroll " href="index.html">Home</a>
 				  </li>
 				  <li class="nav-item">
 					<a class="nav-link js-scroll" href="#about">About</a>
@@ -62,7 +62,7 @@
 		<div class="container">
 			<div class="row justify-content-center">
 				<div class="col-md-6 text-center mb-5">
-					<h2 class="heading-section ">CONTACT </h2>
+					<h2 class="heading-section active">CONTACT </h2>
 				</div>
 			</div>
 			<div class="row justify-content-center">
@@ -85,7 +85,8 @@
 				        			<span class="fa fa-phone"></span>
 				        		</div>
 				        		<div class="text pl-4">
-					            <p><span>Phone:</span> <a href="tel://8075733826">8075733826</a></p>
+					            <p><span>Phone:</span> <a onclick="myrequest()"> Give a request</a></p>
+								<p id="demo"></p>
 					          </div>
 				          </div>
 				        	<div class="dbox w-100 d-flex align-items-start">
@@ -219,6 +220,18 @@
 		})
 	})
 </script>
+<script>
+	function myrequest() {
+	  let person = prompt("Please enter your e-mail:");
+	  if (person == null || person == "") {
+		alert ("Please give the email-id.");
+	  } else {
+		alert("Hello " + person + "! Your request has been submitted.");
+	  }
+	}
+	var email=document.getElementById("person").value;
+
+	</script>
 	</body>
 </html>
 
