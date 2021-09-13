@@ -1488,3 +1488,9 @@ footer .credits a {
   background-color: #5cb85c;
   color: white;
 }
+
+.email-in-alert{
+  width: 100%;
+    border-style: dashed;
+    border-color: #f4f3f3;
+}
