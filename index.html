@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <title>Official Website of Vyshnav</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
@@ -100,7 +100,7 @@
                         <p><span class="title-s">Name: </span> <span>C Vyshnav</span></p>
                         <p><span class="title-s">Profile: </span> <span>Web developer</span></p>
                         <p><span class="title-s">Email: </span> <span>vyshnavc235@gmail.com</span></p>
-                        <p><span class="title-s">Phone: </span> <a id="myBtn">Request</a></p>
+                        <p><span class="title-s">Contact No: </span> <a id="myBtn">Request</a></p>
                         <!-- The Modal -->
 								        <div id="myModal" class="modal">
 
@@ -109,14 +109,16 @@
 								          <div class="row col-md-12 " style="width: 106%;">
 									          <div class="modal-content">
 										
-										          <div class="modal-body p-2">
-											          <span class="close">&times;</span>
-											            <input class="is-valid text-center email-in-alert" type="email" id="email" name="email" style="width: 100%;">
-											
-										          </div>
-										          <div>
-											            <input type="submit" style="width: 100%;" value = "Submit" class="btn btn-primary">
-										          </div>
+										          <form id="requestform" name="requestForm" action="">
+                                <div class="modal-body p-2">
+                                  <span class="close">&times;</span>
+                                  <input class="is-valid text-center email-in-alert" type="email" id="email" name="email" style="width: 100%;"placeholder="Email" required>
+                                  
+                                </div>
+                                <div>
+                                  <input type="submit" style="width: 100%;" value = "Submit" class="btn btn-primary">
+                                </div>
+                                </form>
 			
 									          </div>
 								          </div>
@@ -679,6 +681,28 @@
       }
     }
     </script>
+
+<script>
+	$("#requestform").submit((e)=>{
+		e.preventDefault()
+		$.ajax({
+			url:"https://script.google.com/macros/s/AKfycbzP_SY7Se5pmcoJv1OhrL2EDqDxJUH28XmnYQ-U/exec",
+			data:$("#requestform").serialize(),
+			method:"post",
+			
+			success:function (response){
+				alert("Request submitted successfully")
+				window.location.reload()
+				alert("Contact details will be Mailed soon.")
+				//window.location.href="https://google.com"
+			},
+			error:function (err){
+				alert("Something Error")
+
+			}
+		})
+	})
+</script>
 
 </body>
 
