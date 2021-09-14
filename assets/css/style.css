@@ -1462,7 +1462,7 @@ footer .credits a {
 
 /* The Close Button */
 .close {
-  color: white;
+  color: rgb(172, 9, 9);
   float: right;
   font-size: 28px;
   font-weight: bold;
