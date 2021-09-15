@@ -1494,3 +1494,9 @@ footer .credits a {
     border-style: dashed;
     border-color: #f4f3f3;
 }
+
+.map{
+  width: 100%;
+    border: 0;
+    
+}
