@@ -102,14 +102,12 @@
                         <p><span class="title-s">Email: </span> <span><a  href="mailto:vyshnavc235@gmail.com">vyshnavc235@gmail.com</a></span></p>
                         <p><span class="title-s">Contact No: </span> <a id="myBtn">Request for number</a></p>
                         <div class="info">
-                          <a href=""><img src="assets/img/info-circle.svg" alt=""></a>
+                            <a><img src="assets/img/info-circle.svg" alt="" id="myBtn" onclick="myFunction()"></a>
                         </div>
                         
-                        <!-- The Modal -->
+                        <!-- The Modal for recieving mail as request-->
 								        <div id="myModal" class="modal">
 
-  								      <!-- Modal content -->
-  								
 								          <div class="row col-md-12 " style="width: 106%;">
 									          <div class="modal-content">
 										
@@ -128,6 +126,8 @@
 								          </div>
 
 								        </div>
+                        
+                              
                       </div>
                     </div>
                   </div>
@@ -187,6 +187,16 @@
       </div>
     </section>
     <!-- End About Section -->
+
+    <!-- info section -->
+
+    
+
+
+<!-- Modal -->
+
+
+<!-- info section ends -->
     
     <!-- ======= Services Section ======= -->
     <section id="service-section" class="services-mf pt-5 route">
@@ -646,7 +656,7 @@
   <script src="assets/js/main.js"></script>
   
 
-  <script>
+<script>
     function myrequest() {
       let person = prompt("Please enter your e-mail:");
       if (person == null || person == "") {
@@ -657,36 +667,7 @@
     }
     var email=document.getElementById("person").value;
   
-    </script>
-  
-  <script>
-    // Get the modal
-    var modal = document.getElementById("myModal");
-    
-    // Get the button that opens the modal
-    var btn = document.getElementById("myBtn");
-    
-    // Get the <span> element that closes the modal
-    var span = document.getElementsByClassName("close")[0];
-    
-    // When the user clicks the button, open the modal 
-    btn.onclick = function() {
-      modal.style.display = "block";
-    }
-    
-    // When the user clicks on <span> (x), close the modal
-    span.onclick = function() {
-      modal.style.display = "none";
-    }
-    
-    // When the user clicks anywhere outside of the modal, close it
-    window.onclick = function(event) {
-      if (event.target == modal) {
-      modal.style.display = "none";
-      }
-    }
-    </script>
-
+</script>
 <script>
 	$("#requestform").submit((e)=>{
 		e.preventDefault()
@@ -708,6 +689,40 @@
 		})
 	})
 </script>
+
+<script>
+  function myFunction() {
+    alert("The email you entered will be received by me And contact details will be shared with verification");
+  }
+  </script>
+
+<script>
+  // Get the modal
+  var modal = document.getElementById("myModal");
+  
+  // Get the button that opens the modal
+  var btn = document.getElementById("myBtn");
+  
+  // Get the <span> element that closes the modal
+  var span = document.getElementsByClassName("close")[0];
+  
+  // When the user clicks the button, open the modal 
+  btn.onclick = function() {
+    modal.style.display = "block";
+  }
+  
+  // When the user clicks on <span> (x), close the modal
+  span.onclick = function() {
+    modal.style.display = "none";
+  }
+  
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+  </script>
 
 </body>
 
