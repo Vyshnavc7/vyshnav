@@ -1506,3 +1506,13 @@ footer .credits a {
   margin-left: 225px;
 }
 
+.git-about{
+  color: #212529;
+}
+
+.css-about{
+  color: orangered;
+}
+.boot-about{
+  color: #000;
+}
