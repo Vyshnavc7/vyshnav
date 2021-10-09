@@ -1530,14 +1530,14 @@ footer .credits a {
 }
 
 .pagination a.active {
-  background-color: #4CAF50;
+  background-color: #467ef8;
   color: white;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
 .pagination a:hover:not(.active) {
   background-color: #ddd;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
 /* change page ends */
