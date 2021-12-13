@@ -1540,3 +1540,9 @@ footer .credits a {
 }
 
 /* change page ends */
+.size_of_image{
+  margin-left: 10px;
+  width: 180px;
+  height: 230px;
+  margin-top: -34px;
+}
