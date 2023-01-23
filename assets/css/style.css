@@ -42,7 +42,7 @@ h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #0563bb;
+  background: #c633f5;
   width: 40px;
   height: 40px;
   border-radius: 50px;
@@ -221,7 +221,7 @@ h6 {
 .nav-menu .active:focus,
 .nav-menu li:hover>a {
   color: #fff;
-  background: #0563bb;
+  background: #c633f5;
 }
 
 .nav-menu a:hover span,
@@ -285,7 +285,7 @@ h6 {
   width: 100%;
   height: 100vh;
   background: url("../img/portfolio/background2.jpg") top right no-repeat;
-  background-position: bottom;
+  /* background-position: bottom; */
   background-size: cover;
   position: relative;
 }
@@ -293,6 +293,11 @@ h6 {
 @media (min-width: 992px) {
   #hero {
     padding-left: 160px;
+  }
+}
+@media (max-width: 768px){
+  #hero {
+    background-position: bottom !important;
   }
 }
 
@@ -311,7 +316,7 @@ h6 {
   font-size: 64px;
   font-weight: 700;
   line-height: 56px;
-  color: #45505b;
+  color: black;
 }
 
 #hero p {
@@ -380,7 +385,7 @@ section {
   margin-bottom: 20px;
   padding-bottom: 20px;
   position: relative;
-  color: #45505b;
+  color: black;
 }
 
 .section-title h2::before {
@@ -536,7 +541,7 @@ section {
 .resume .resume-item {
   padding: 0 0 20px 20px;
   margin-top: -2px;
-  border-left: 2px solid #0563bb;
+  border-left: 2px solid black;
   position: relative;
 }
 
@@ -1031,7 +1036,7 @@ section {
 
 .contact .info i {
   font-size: 20px;
-  color: #0563bb;
+  color: #c633f5;
   float: left;
   width: 44px;
   height: 44px;
@@ -1137,7 +1142,7 @@ section {
 }
 
 .contact .php-email-form button[type=submit] {
-  background: #0563bb;
+  background: #c633f5;
   border: 0;
   padding: 10px 35px;
   color: #fff;
@@ -1203,7 +1208,7 @@ section {
 #footer .social-links a {
   font-size: 18px;
   display: inline-block;
-  background: #0563bb;
+  background: #c633f5;
   color: #fff;
   line-height: 1;
   padding: 8px 0;
