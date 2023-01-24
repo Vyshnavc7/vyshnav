@@ -56,7 +56,7 @@ h6 {
 }
 
 .back-to-top:hover {
-  background: #0678e3;
+  background: #ff0000;
   color: #fff;
 }
 
@@ -345,7 +345,7 @@ h6 {
 }
 
 #hero .social-links a:hover {
-  color: #0563bb;
+  color: #ff0000;
 }
 
 @media (max-width: 992px) {
@@ -1151,7 +1151,7 @@ section {
 }
 
 .contact .php-email-form button[type=submit]:hover {
-  background: #0678e3;
+  background: #ff0000;
 }
 
 @-webkit-keyframes animate-loading {
@@ -1221,7 +1221,7 @@ section {
 }
 
 #footer .social-links a:hover {
-  background: #0678e3;
+  background: #ff003c;
   color: #fff;
   text-decoration: none;
 }
@@ -1232,4 +1232,52 @@ section {
 
 #footer .credits {
   font-size: 13px;
+}
+
+.quotes-wrap {
+  display: block;
+  margin: 0;
+  padding: 40px 30px;
+  position: relative;
+  background: #c633f5;
+  border-radius: 50px;
+  border: none;
+  box-shadow: 0 25px 98px 0 rgb(19 19 19 / 3%);
+}
+
+.quotes {
+  font-family: DynaPuff, sans-serif;
+  font-size: 26px;
+  line-height: 1.6;
+  color: white;
+}
+
+.quotes-author {
+  font-size: 18px;
+}
+
+.quotes-author-info {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.quotes-icons {
+  position: absolute;
+  animation: rotation 10s infinite linear;
+}
+
+.quotes-triangle-icon {
+  top: 5px;
+  left: 3px;
+}
+
+.quotes-circle-icon {
+  top: 80px;
+  right: 34px;
+}
+
+.quotes-pentagon-icon {
+  bottom: 150px;
+  left: 39px;
+  width: 30px
 }
