@@ -45,10 +45,11 @@
 
     <nav id="navbar" class="navbar nav-menu">
       <ul>
-        <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
-        <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
+        <li><a href="index.html" class="nav-link scrollto "><i class="bx bx-home"></i> <span>Home</span></a></li>
+        <li><a href="#about" class="nav-link scrollto active"><i class="bx bx-user"></i> <span>About</span></a></li>
         <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
-        <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Project</span></a></li>
+        <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Project</span></a>
+        </li>
         <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
       </ul>
     </nav><!-- .nav-menu -->
@@ -59,7 +60,7 @@
   <section id="hero" class="d-flex flex-column justify-content-center">
     <div class="container" data-aos="zoom-in" data-aos-delay="100">
       <h1>About Me!</h1>
-      <h2>I am a web developer</h2>
+      <h2 class="mt-4">I am a web developer</h2>
       <div class="d-flex flex-column align-items-center justify-content-center">
         <a href="#about" class="btn-get-started scrollto"><i class="bi bi-chevron-double-down"></i></a>
       </div>
@@ -147,11 +148,11 @@
               </div>
             </div>
             <div class="row">
-              <div class="col-md-10">
-                <button class="btn btn-primary more-btn">More about me</button>
-
-              </div>
+              <p>I am a dedicated problem-solver who enjoys finding creative solutions to complex challenges. With a
+                focus on quality and attention to detail, I am committed to delivering web solutions that exceed
+                expectations and drive business success</p>
             </div>
+
           </div>
         </div>
 
@@ -167,7 +168,7 @@
         </div>
         <div class="cards">
           <div class="card card-1">
-            <div class="card__icon"><i class="fas fa-bolt"></i></div>
+            <div class="card__icon"><i class="fas fa-globe"></i></div>
             <p class="card__exit"><i class="fas fa-times"></i></p>
             <h2 class="card__title">Website Designing</h2>
             <p>Web design encompasses many different skills and disciplines in the production and maintenance of
@@ -177,7 +178,7 @@
             </p>
           </div>
           <div class="card card-2">
-            <div class="card__icon"><i class="fas fa-bolt"></i></div>
+            <div class="card__icon"><i class="fas fa-globe"></i></div>
             <p class="card__exit"><i class="fas fa-times"></i></p>
             <h2 class="card__title">Website development</h2>
             <p>
@@ -274,13 +275,11 @@
 
     <!-- ======= Skills Section ======= -->
     <section id="skills" class="skills section-bg">
-      <div class="container" data-aos="fade-up">
+      <div class="container">
 
         <div class="section-title">
-          <h2>Skills</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
-            consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit
-            in iste officiis commodi quidem hic quas.</p>
+          <h2>Overview</h2>
+          <!-- <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p> -->
         </div>
 
         <div class="row skills-content">
@@ -304,19 +303,39 @@
             </div>
 
             <div class="progress">
-              <span class="skill">JavaScript <i class="val">75%</i></span>
+              <span class="skill">JavaScript <i class="val">80%</i></span>
               <div class="progress-bar-wrap">
                 <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
                 </div>
               </div>
             </div>
-
+            <div class="progress">
+              <span class="skill">Bootstrap <i class="val">90%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div>
+            <div class="progress">
+              <span class="skill">PostgreSQL <i class="val">60%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div>
+            <div class="progress">
+              <span class="skill">Sequelize ORM <i class="val">60%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div>
           </div>
 
           <div class="col-lg-6">
 
             <div class="progress">
-              <span class="skill">C/C++ <i class="val">60%</i></span>
+              <span class="skill">PHP <i class="val">70%</i></span>
               <div class="progress-bar-wrap">
                 <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
                 </div>
@@ -324,7 +343,7 @@
             </div>
 
             <div class="progress">
-              <span class="skill">Github <i class="val">90%</i></span>
+              <span class="skill">Angular <i class="val">50%</i></span>
               <div class="progress-bar-wrap">
                 <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
                 </div>
@@ -332,132 +351,39 @@
             </div>
 
             <div class="progress">
-              <span class="skill">Python <i class="val">55%</i></span>
+              <span class="skill">Scss <i class="val">70%</i></span>
               <div class="progress-bar-wrap">
                 <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100">
                 </div>
               </div>
             </div>
-
+            <div class="progress">
+              <span class="skill">API Creation and integration<i class="val">60%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div>
+            <div class="progress">
+              <span class="skill">MONGODB <i class="val">45%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div>
+            <div class="progress">
+              <span class="skill">Python <i class="val">65%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div>
           </div>
 
         </div>
 
       </div>
     </section><!-- End Skills Section -->
-
-    <!-- ======= Resume Section ======= -->
-    <section id="resume" class="resume">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Resume</h2>
-          <p>Professional angular developer with work experience upto 8 months</p>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-6">
-            <h3 class="resume-title">Sumary</h3>
-            <div class="resume-item pb-0">
-              <h4>C Vyshnav</h4>
-              <p><em>Innovative and deadline-driven web developer with 6+ months of experience designing and
-                  developing user-centered web application using angular framework from initial concept to final.</em>
-              </p>
-              <ul>
-                <li>Mangaluru, karnataka</li>
-                <li>8075733826</li>
-                <li>officialvyshnavc7@gmail.com</li>
-              </ul>
-            </div>
-
-            <h3 class="resume-title">Education</h3>
-            <div class="resume-item">
-              <h4>Master of Computer application</h4>
-              <h5>2020- 2022</h5>
-              <p><em>Shree devi Institute of Technology, Mangaluru IND</em></p>
-              <p>Affiliated to Visvesvaraya Technological university</p>
-            </div>
-            <div class="resume-item">
-              <h4>Bachelor of Computer application</h4>
-              <h5>2017 - 2020</h5>
-              <p><em>Shree devi college, Mangaluru IND</em></p>
-              <p>Affiliated to Mangalore university</p>
-            </div>
-            <h3 class="resume-title">Professional Experience</h3>
-            <div class="resume-item">
-              <h4>Junior application developer(Web deparment)</h4>
-              <h5>2022(September) - Present</h5>
-              <p><em>Mangaluru IND </em></p>
-              <ul>
-                <li>Lead in the design, development, and implementation of the web page.</li>
-                <!-- <li>Supervise the assessment of all graphic materials in order to ensure quality and accuracy of the
-                  design</li> -->
-                <!-- <li>Oversee the efficient use of production project budgets ranging from $2,000 - $25,000</li> -->
-              </ul>
-            </div>
-            <div class="resume-item">
-              <h4>Junior netsuite developer</h4>
-              <h5>2022(June)- 2022(September)</h5>
-              <p><em>Mangaluru IND </em></p>
-              <ul>
-                <li>Have basic knowledge on the functionality of netuiste scripts.</li>
-                <!-- <li>Managed up to 5 projects or tasks at a given time while under pressure</li>
-                <li>Recommended and consulted with clients on the most appropriate graphic design</li>
-                <li>Created 4+ design presentations and proposals a month for clients and account managers</li> -->
-              </ul>
-            </div>
-          </div>
-          <div class="col-lg-6">
-
-            <h3 class="resume-title">Projects</h3>
-            <div class="resume-item pb-0">
-              <h4>Dream Haulage</h4>
-              <p><em>Vehicle rental system. Peoples are able rent vehicles for their needs ad also keep their vehicle
-                  for renting</em>
-              </p>
-              <h4>Suvarna Agencies</h4>
-              <p><em>Website where power tools are sold.</em>
-              </p>
-              <h4>getMymed</h4>
-              <p><em>Web application where people can buy medicines from their home.</em>
-              </p>
-              <h4>India Team</h4>
-              <p><em>Static design which shows the team indian men players.</em>
-              </p>
-              <h4>Tip % Calculator</h4>
-              <p><em>Calculator which is used to calculate the tip given with the bill.</em>
-              </p>
-
-            </div>
-            <h3 class="resume-title">Skills</h3>
-            <div class="resume-item">
-              <h4>Programming language</h4>
-              <h5>C/C++</h5>
-              <h5>JavaScript</h5>
-              <h5>Python</h5>
-
-              <h4>Framework</h4>
-              <h5>Bootstrap</h5>
-              <h5>Angular</h5>
-              <h5>Express</h5>
-              <h5>AngularMaterial</h5>
-
-              <h4>Database</h4>
-              <h5>Mysql</h5>
-              <h5>MongoDB</h5>
-              <!-- <h5>Python</h5> -->
-
-              <h4>Version Controller</h4>
-              <h5>git</h5>
-              <h5>Github</h5>
-              <h5>Gitlab</h5>
-
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section><!-- End Resume Section -->
 
     <!-- ======= Portfolio Section ======= -->
     <section id="portfolio" class="portfolio section-bg">
@@ -670,7 +596,7 @@
                 </svg>
                 <i class="bx bx-file"></i>
               </div>
-              <h4><a href="">NetSuite Development</a></h4>
+              <h4><a href="">NetSuite Scripting</a></h4>
               <p>A NetSuite developer takes a client's objectives and turn those ideas into programs and
                 extensions within a NetSuite environment.</p>
             </div>
@@ -841,11 +767,14 @@
 
         <div class="section-title">
           <h2>Contact</h2>
+          <!-- <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
+            consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit
+            in iste officiis commodi quidem hic quas.</p> -->
         </div>
 
-        <div class="row mt-1">
+        <div class="row">
 
-          <div class="col-lg-4">
+          <div class="col-lg-5 d-flex align-items-stretch">
             <div class="info">
               <div class="address">
                 <i class="bi bi-geo-alt"></i>
@@ -863,38 +792,44 @@
               <div class="phone">
                 <i class="bi bi-phone"></i>
                 <h4>Call:</h4>
-                <p>08075733826</p>
+                <!-- <p>08075733826</p> -->
               </div>
 
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d527.1777481231572!2d74.84127684647177!3d12.893591197073643!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba35b485b405ca1%3A0xd121112ad4a6c857!2sSuprabath%20Commercial%20Complex!5e0!3m2!1sen!2sin!4v1676397263403!5m2!1sen!2sin"
+                width="450" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
 
           </div>
 
-          <div class="col-lg-8 mt-5 mt-lg-0">
-
-            <form action="" id="contactForm" name="contactForm" method="post" role="form" class="php-email-form">
+          <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
               <div class="row">
-                <div class="col-md-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                <div class="form-group col-md-6">
+                  <label for="name">Your Name</label>
+                  <input type="text" name="name" class="form-control" id="name" required>
                 </div>
-                <div class="col-md-6 form-group mt-3 mt-md-0">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                <div class="form-group col-md-6">
+                  <label for="name">Your Email</label>
+                  <input type="email" class="form-control" name="email" id="email" required>
                 </div>
               </div>
-              <!-- <div class="form-group mt-3">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
-              </div> -->
-              <div class="form-group mt-3">
-                <textarea class="form-control" name="message" rows="8" placeholder="Message" required></textarea>
+              <div class="form-group">
+                <label for="name">Subject</label>
+                <input type="text" class="form-control" name="subject" id="subject" required>
               </div>
-              <!-- <div class="my-3">
+              <div class="form-group">
+                <label for="name">Message</label>
+                <textarea class="form-control" name="message" rows="10" required></textarea>
+              </div>
+              <div class="my-3">
                 <div class="loading">Loading</div>
                 <div class="error-message"></div>
                 <div class="sent-message">Your message has been sent. Thank you!</div>
-              </div> -->
+              </div>
               <div class="text-center"><button type="submit">Send Message</button></div>
             </form>
-
           </div>
 
         </div>

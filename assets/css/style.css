@@ -8,6 +8,10 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+
+@import url("./fontawesome-free/css/fontawesome-all.min.css");
+@import url("./framework.css");
+
 body {
   font-family: "Open Sans", sans-serif;
   color: #272829;
@@ -289,6 +293,7 @@ h6 {
   background-size: cover;
   position: relative;
 }
+
 #hero .btn-get-started {
   font-size: 64px;
   transition: 0.5s;
@@ -306,12 +311,14 @@ h6 {
     background-attachment: fixed;
   }
 }
+
 @media (min-width: 992px) {
   #hero {
     padding-left: 160px;
   }
 }
-@media (max-width: 768px){
+
+@media (max-width: 768px) {
   #hero {
     background-position: bottom !important;
   }
@@ -436,8 +443,9 @@ section {
 #about {
   width: 100%;
   height: auto;
-  background: #f7f7f7;
-  padding-top: 120px;
+  /* background: #f7f7f7; */
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 
 #about .div-img-bg {
@@ -453,6 +461,7 @@ section {
   height: 400px;
   -o-object-fit: cover;
   object-fit: cover;
+  border-radius: 10px;
 }
 
 #about .about-descr .p-heading {
@@ -466,6 +475,7 @@ section {
   margin-bottom: 0;
   text-align: left;
 }
+
 #about .btn-about {
   font-family: "Raleway", sans-serif;
   text-transform: uppercase;
@@ -1066,8 +1076,12 @@ section {
 # Contact
 --------------------------------------------------------------*/
 .contact .info {
-  width: 100%;
+  border-top: 3px solid #c633f5;
+  border-bottom: 3px solid #c633f5;
+  padding: 30px;
   background: #fff;
+  width: 100%;
+  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.1);
 }
 
 .contact .info i {
@@ -1076,7 +1090,7 @@ section {
   float: left;
   width: 44px;
   height: 44px;
-  background: #eef7ff;
+  background: #e7f5fb;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1089,35 +1103,72 @@ section {
   font-size: 22px;
   font-weight: 600;
   margin-bottom: 5px;
-  color: #45505b;
+  color: black;
 }
 
 .contact .info p {
-  padding: 0 0 0 60px;
-  margin-bottom: 0;
+  padding: 0 0 10px 60px;
+  margin-bottom: 20px;
   font-size: 14px;
-  color: #728394;
+  color: #c633f5;
 }
 
-.contact .info .email,
-.contact .info .phone {
-  margin-top: 40px;
+.contact .info .email p {
+  padding-top: 5px;
+}
+
+.contact .info .social-links {
+  padding-left: 60px;
+}
+
+.contact .info .social-links a {
+  font-size: 18px;
+  display: inline-block;
+  background: #333;
+  color: #fff;
+  line-height: 1;
+  padding: 8px 0;
+  border-radius: 50%;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+  margin-right: 10px;
+}
+
+.contact .info .social-links a:hover {
+  background: #c633f5;
+  color: #fff;
 }
 
 .contact .info .email:hover i,
 .contact .info .address:hover i,
 .contact .info .phone:hover i {
-  background: #0563bb;
+  background: #c633f5;
   color: #fff;
+  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
+
 }
 
 .contact .php-email-form {
   width: 100%;
+  border-top: 3px solid #c633f5;
+  border-bottom: 3px solid #c633f5;
+  padding: 30px;
   background: #fff;
+  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
 }
 
 .contact .php-email-form .form-group {
   padding-bottom: 8px;
+}
+
+.contact .php-email-form .validate {
+  display: none;
+  color: red;
+  margin: 0 0 15px 0;
+  font-weight: 400;
+  font-size: 13px;
 }
 
 .contact .php-email-form .error-message {
@@ -1162,11 +1213,29 @@ section {
   animation: animate-loading 1s linear infinite;
 }
 
+.contact .php-email-form .form-group {
+  margin-bottom: 20px;
+}
+
+.contact .php-email-form label {
+  padding-bottom: 8px;
+  color: black;
+  font-weight: 600;
+}
+
 .contact .php-email-form input,
 .contact .php-email-form textarea {
-  border-radius: 4px;
+  border-radius: 0;
   box-shadow: none;
   font-size: 14px;
+  border-radius: 4px;
+}
+
+.contact .php-email-form input:focus,
+.contact .php-email-form textarea:focus {
+  border-color: #c633f5;
+  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
+
 }
 
 .contact .php-email-form input {
@@ -1180,14 +1249,14 @@ section {
 .contact .php-email-form button[type=submit] {
   background: #c633f5;
   border: 0;
-  padding: 10px 35px;
+  padding: 12px 34px;
   color: #fff;
   transition: 0.4s;
   border-radius: 50px;
 }
 
 .contact .php-email-form button[type=submit]:hover {
-  background: #ff0000;
+  background: #209dd8;
 }
 
 @-webkit-keyframes animate-loading {
@@ -1318,13 +1387,13 @@ section {
   width: 30px
 }
 
-.more-btn{
+.more-btn {
   background: #c633f5;
-    border: 0;
-    padding: 10px 35px;
-    color: #fff;
-    transition: 0.4s;
-    border-radius: 50px;
+  border: 0;
+  padding: 10px 35px;
+  color: #fff;
+  transition: 0.4s;
+  border-radius: 50px;
 }
 
 
@@ -1456,3 +1525,93 @@ main-container {
   }
 }
 
+.row3 {
+  color: #474747;
+  background-color: #FFFFFF;
+}
+
+/* Max Wrapper Width - Laptop, Desktop etc.
+--------------------------------------------------------------------------------------------------------------- */
+@media screen and (min-width:1140px) {
+  .hoc {
+    max-width: 1140px;
+  }
+}
+
+@media screen and (min-width:978px) and (max-width:1140px) {
+  .hoc {
+    max-width: 95%;
+  }
+}
+
+
+/* Mobile Devices
+--------------------------------------------------------------------------------------------------------------- */
+@media screen and (max-width:978px) {
+  .hoc {
+    max-width: 90%;
+  }
+
+
+}
+
+.sectiontitle {
+  display: block;
+  max-width: 55%;
+  margin: 0 auto 80px;
+  text-align: center;
+}
+
+.sectiontitle * {
+  margin: 0;
+}
+
+.pr-charts {}
+
+.pr-charts .pr-chart-ctrl {
+  display: block;
+  float: left;
+  width: 25%;
+  min-height: 200px;
+}
+
+.pr-charts .pr-chart-ctrl .pr-chart {
+  display: block;
+  position: relative;
+  width: 100%;
+  margin: 0 0 20px 0;
+  text-align: center;
+}
+
+.pr-charts .pr-chart-ctrl .pr-chart canvas {
+  display: block;
+  margin: 0 auto;
+  padding: 0;
+  vertical-align: top;
+}
+
+.pr-charts .pr-chart-ctrl .pr-chart i {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 200px;
+  line-height: 200px;
+  font-size: 18px;
+  font-style: normal;
+}
+
+/* Must have same height & line height as set in the javascript size element to vertical align centre */
+.pr-charts .pr-chart-ctrl p {
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+}
+
+.clear::before,
+.clear::after,
+.group::before,
+.group::after {
+  display: table;
+  content: "";
+}
