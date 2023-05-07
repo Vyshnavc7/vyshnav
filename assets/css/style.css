@@ -464,6 +464,18 @@ section {
   border-radius: 10px;
 }
 
+@media screen and (max-width:576px) {
+  #about .div-img-bg .about-img img {
+    margin-top: -60px;
+    margin-left: 0px;
+    height: 400px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+
+}
+
 #about .about-descr .p-heading {
   font-family: "Playfair Display", serif;
   font-size: 28px;
@@ -493,6 +505,85 @@ section {
 
 #about .btn-about:hover {
   background: red;
+}
+
+.icon-box {
+  padding: 20px 15px;
+  position: relative;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 0 29px 0 rgba(68, 88, 144, 0.2);
+  transition: all 0.3s ease-in-out;
+  border-radius: 8px;
+  text-align: center;
+  z-index: 1;
+}
+
+.icon-box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 0;
+  transition: ease-in-out 0.3s;
+  z-index: -1;
+}
+
+.icon-box:hover::before {
+  background: #d43076;
+  height: 100%;
+  border-radius: 0px;
+}
+
+.icon-box-hovering {
+  padding: 20px 15px;
+  position: relative;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 0 29px 0 rgba(68, 88, 144, 0.2);
+  transition: all 0.3s ease-in-out;
+  border-radius: 8px;
+  text-align: center;
+  z-index: 1;
+}
+
+.icon-box-hovering::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 0;
+  transition: ease-in-out 0.3s;
+  z-index: -1;
+}
+
+.icon-box-hovering:hover::before {
+  background: #24f370;
+  height: 100%;
+  border-radius: 0px;
+}
+
+.description {
+  font-size: 15px;
+  line-height: 24px;
+  margin-bottom: 0;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.icon-box:hover .title a,
+.icon-box:hover .description {
+  color: #fff;
+}
+
+
+
+@media (max-width: 768px) {
+  .icon-box::before {
+    bottom: 60%;
+  }
 }
 
 /*--------------------------------------------------------------
