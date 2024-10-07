@@ -531,60 +531,54 @@ section {
 }
 
 .icon-box:hover::before {
-  background: #d43076;
+  background: #5a66ef;
   height: 100%;
   border-radius: 0px;
 }
 
-.icon-box-hovering {
-  padding: 20px 15px;
-  position: relative;
-  overflow: hidden;
-  background: #fff;
-  box-shadow: 0 0 29px 0 rgba(68, 88, 144, 0.2);
-  transition: all 0.3s ease-in-out;
-  border-radius: 8px;
-  text-align: center;
-  z-index: 1;
+.icon {
+  margin-bottom: 15px;
 }
 
-.icon-box-hovering::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 0;
-  transition: ease-in-out 0.3s;
-  z-index: -1;
+.icon i {
+  font-size: 36px;
+  transition: color 0.3s ease-in-out;
 }
 
-.icon-box-hovering:hover::before {
-  background: #24f370;
-  height: 100%;
-  border-radius: 0px;
+.icon-box:hover i {
+  color: #fff;
 }
 
-.description {
+h4 a {
+  color: #444;
+  transition: color 0.3s ease-in-out;
+}
+
+p {
   font-size: 15px;
   line-height: 24px;
   margin-bottom: 0;
   font-size: 16px;
   line-height: 1.5;
+  transition: color 0.3s ease-in-out;
 }
 
-.icon-box:hover .title a,
-.icon-box:hover .description {
+/* Add hover effect to both p and a */
+.icon-box:hover p {
   color: #fff;
 }
 
-
+.icon-box:hover h4 {
+  color: #fff;
+}
 
 @media (max-width: 768px) {
   .icon-box::before {
     bottom: 60%;
   }
 }
+
+
 
 /*--------------------------------------------------------------
 # Facts
