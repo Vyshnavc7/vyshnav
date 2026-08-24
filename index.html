@@ -3,335 +3,184 @@
 
 <head>
   <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Official Website of Vyshnav</title>
-  <meta content="Welcome to Vyshnav's official website" name="description">
-  <meta content="Vyshnav, web developer, portfolio" name="keywords">
+  <meta name="description" content="Welcome to Vyshnav's official website showcasing his work and portfolio.">
+  <meta name="keywords" content="Vyshnav, web developer, portfolio">
 
-  <!-- Canonical Link -->
   <link rel="canonical" href="https://vyshnavc7.github.io/vyshnav/">
 
   <!-- Favicons -->
   <link href="assets/img/favicon1.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
-  <!-- Open Graph Meta Tags for Link Sharing -->
+  <!-- Open Graph Meta Tags -->
   <meta property="og:title" content="Official Website of Vyshnav">
   <meta property="og:description" content="Welcome to Vyshnav's official website showcasing his work and portfolio.">
   <meta property="og:type" content="website">
   <meta property="og:image" content="https://vyshnavc7.github.io/vyshnav/assets/img/favicon1.png">
   <meta property="og:url" content="https://vyshnavc7.github.io/vyshnav/">
-  <meta name="twitter:card" content="summary_large_image">
 
+  <!-- Styles -->
   <link rel="stylesheet" href="assets/css/main.css">
-
 </head>
 
 <body>
 
-  <!-- notification for small viewports and landscape oriented smartphones -->
-  <div class="device-notification">
-    <a class="device-notification--logo" href="#0">
-      <img src="assets/img/logo.png" alt="Global">
-      <p>C Vyshnav</p>
-    </a>
-    <p class="device-notification--message">Global has so much to offer that we must request you orient your device to
-      portrait or find a larger screen. You won't be disappointed.</p>
-  </div>
+  <header class="header">
+    <div class="logo">Vyshnav<span class="text-gradient">.</span></div>
+    <div class="menu-toggle" id="mobile-menu">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+    <nav class="nav-links">
+      <a href="#home" class="active">Home</a>
+      <a href="#skills">Skills</a>
+      <a href="#works">Works</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a href="#hire" class="cta-button">Hire Me</a>
+  </header>
 
-  <div class="perspective effect-rotate-left">
-    <div class="container">
-      <div class="outer-nav--return"></div>
-      <div id="viewport" class="l-viewport">
-        <div class="l-wrapper">
-          <header class="header">
-            <a class="header--logo" href="#0">
-              <img src="assets/img/v-logo2.jpg" alt="Global">
-              <p>C Vyshnav</p>
-            </a>
-            <button class="header--cta cta">Hire Me</button>
-            <div class="header--nav-toggle">
-              <span></span>
-            </div>
-          </header>
-          <nav class="l-side-nav">
-            <ul class="side-nav">
-              <li class="is-active"><span>Home</span></li>
-              <li><span>Skills</span></li>
-              <li><span>Works</span></li>
-              <li><span>About</span></li>
-              <li><span>Contact</span></li>
-            </ul>
-          </nav>
-          <ul class="l-main-content main-content">
-            <li class="l-section section section--is-active">
-              <div class="intro">
-                <div class="intro--banner">
-                  <h1>Your next<br>modern<br>web developer</h1>
-                  <button class="cta">Hire Me
-                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                      xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118"
-                      style="enable-background:new 0 0 150 118;" xml:space="preserve">
-                      <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
-                        <path
-                          d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z" />
-                      </g>
-                    </svg>
-                    <span class="btn-background"></span>
-                  </button>
-                  <img src="assets/img/introduction-visual.png" alt="Welcome">
-                </div>
-                <div class="intro--options">
-                  <a href="#0">
-                    <h3>Angular Developer</h3>
-                    <p>Building dynamic and responsive web applications with cutting-edge frameworks.</p>
-                  </a>
-                  <a href="#0">
-                    <h3>Backend Developer</h3>
-                    <p>Creating robust server-side solutions and API integrations for seamless performance.</p>
-                  </a>
-                  <a href="#0">
-                    <h3>Full Stack Developer</h3>
-                    <p>Delivering end-to-end web development, combining front-end creativity and back-end logic.</p>
-                  </a>
-                </div>
-              </div>
-            </li>
-            <li class="l-section section">
-              <div class="work">
-                <h2>Selected work</h2>
-                <div class="work--lockup">
-                  <ul class="slider">
-                    <li class="slider--item slider--item-left">
-                      <a href="#0">
-                        <div class="slider--item-image">
-                          <img src="assets/img/skills/angular.png" alt="Victory">
-                        </div>
-                        <p class="slider--item-title">Angular</p>
-                        <p class="slider--item-description">LoreExpert in building modern, dynamic web applications
-                          using Angular.</p>
-                      </a>
-                    </li>
-                    <li class="slider--item slider--item-center">
-                      <a href="#0">
-                        <div class="slider--item-image">
-                          <img src="assets/img/skills/Posgresql.png" alt="Metiew and Smith">
-                        </div>
-                        <p class="slider--item-title">PostgreSQL</p>
-                        <p class="slider--item-description">Skilled in managing relational databases with advanced SQL
-                          techniques.</p>
-                      </a>
-                    </li>
-                    <li class="slider--item slider--item-right">
-                      <a href="#0">
-                        <div class="slider--item-image">
-                          <img src="assets/img/skills/Mysql.png" alt="Alex Nowak">
-                        </div>
-                        <p class="slider--item-title">MySQL</p>
-                        <p class="slider--item-description">Proficient in database design, optimization, and
-                          administration with MySQL.</p>
-                      </a>
-                    </li>
-                    <li class="slider--item slider--item-right">
-                      <a href="#0">
-                        <div class="slider--item-image">
-                          <img src="assets/img/skills/Boostrap.png" alt="Alex Nowak">
-                        </div>
-                        <p class="slider--item-title">Bootstrap</p>
-                        <p class="slider--item-description">Experience in creating responsive and visually appealing web
-                          designs.</p>
-                      </a>
-                    </li>
-                  </ul>
-                  <div class="slider--prev">
-                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                      xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118"
-                      style="enable-background:new 0 0 150 118;" xml:space="preserve">
-                      <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
-                        <path d="M561,1169C525,1155,10,640,3,612c-3-13,1-36,8-52c8-15,134-145,281-289C527,41,562,10,590,10c22,0,41,9,61,29
-                    c55,55,49,64-163,278L296,510h575c564,0,576,0,597,20c46,43,37,109-18,137c-19,10-159,13-590,13l-565,1l182,180
-                    c101,99,187,188,193,199c16,30,12,57-12,84C631,1174,595,1183,561,1169z" />
-                      </g>
-                    </svg>
-                  </div>
-                  <div class="slider--next">
-                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                      xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118"
-                      style="enable-background:new 0 0 150 118;" xml:space="preserve">
-                      <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
-                        <path
-                          d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z" />
-                      </g>
-                    </svg>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li class="l-section section">
-              <div class="about">
-                <div class="about--banner">
-                  <h2>I<br>believe in<br>passion and<br>dedication</h2>
-                  <a href="#0">Career
-                    <span>
-                      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118"
-                        style="enable-background:new 0 0 150 118;" xml:space="preserve">
-                        <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
-                          <path
-                            d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z" />
-                        </g>
-                      </svg>
-                    </span>
-                  </a>
-                  <img src="assets/img/about-visual.png" alt="About Us">
-                </div>
-                <div class="about--options">
-                  <a href="#0">
-                    <h3>Infithra</h3>
-                  </a>
-                  <a href="#0">
-                    <h3>Rentalshare</h3>
-                  </a>
-                  <a href="#0">
-                    <h3>Suvarna</h3>
-                  </a>
-                </div>
-              </div>
-            </li>
-            <li class="l-section section">
-              <div class="contact">
-                <div class="contact--lockup">
-                  <div class="modal">
-                    <div class="modal--information">
-                      <p>Kannur,kerala, India</p>
-                      <a href="mailto:ouremail@gmail.com">Officialvyshnavc7@gmail.com</a>
-                      <!-- <a href="tel:+148126287560">+48 12 628 75 60</a> -->
-                    </div>
-                    <ul class="modal--options">
-                      <li><a
-                          href="https://www.linkedin.com/in/vyshnav-c-6637231bb?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app">LinkedIn</a>
-                      </li>
-                      <li><a href="https://www.instagram.com/thatphenomenal_7_/">Instagram</a></li>
-                      <li><a href="mailto:Officialvyshnavc7@gmail.com">Contact Me</a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li class="l-section section">
-              <div class="hire">
-                <h2>Hire me, You get impressed</h2>
-                <!-- checkout formspree.io for easy form setup -->
-                <form class="work-request">
-                  <div class="work-request--options">
-                    <span class="options-a">
-                      <input id="opt-1" type="checkbox" value="app design">
-                      <label for="opt-1">
-                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                          xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 111"
-                          style="enable-background:new 0 0 150 111;" xml:space="preserve">
-                          <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
-                            <path
-                              d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z" />
-                          </g>
-                        </svg>
-                        Web Design
-                      </label>
-                      <input id="opt-2" type="checkbox" value="graphic design">
-                      <label for="opt-2">
-                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                          xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 111"
-                          style="enable-background:new 0 0 150 111;" xml:space="preserve">
-                          <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
-                            <path
-                              d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z" />
-                          </g>
-                        </svg>
-                        Web development
-                      </label>
-                      <input id="opt-3" type="checkbox" value="motion design">
-                      <label for="opt-3">
-                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                          xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 111"
-                          style="enable-background:new 0 0 150 111;" xml:space="preserve">
-                          <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
-                            <path
-                              d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z" />
-                          </g>
-                        </svg>
-                        BE development
-                      </label>
-                    </span>
-                    <span class="options-b">
-                      <input id="opt-4" type="checkbox" value="ux design">
-                      <label for="opt-4">
-                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                          xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 111"
-                          style="enable-background:new 0 0 150 111;" xml:space="preserve">
-                          <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
-                            <path
-                              d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z" />
-                          </g>
-                        </svg>
-                        UX Design
-                      </label>
-                      <input id="opt-5" type="checkbox" value="webdesign">
-                      <label for="opt-5">
-                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                          xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 111"
-                          style="enable-background:new 0 0 150 111;" xml:space="preserve">
-                          <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
-                            <path
-                              d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z" />
-                          </g>
-                        </svg>
-                        Team lead Skill
-                      </label>
-                      <input id="opt-6" type="checkbox" value="marketing">
-                      <label for="opt-6">
-                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                          xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 111"
-                          style="enable-background:new 0 0 150 111;" xml:space="preserve">
-                          <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
-                            <path
-                              d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z" />
-                          </g>
-                        </svg>
-                        Full Stack
-                      </label>
-                    </span>
-                  </div>
-                  <div class="work-request--information">
-                    <div class="information-name">
-                      <input id="name" type="text" spellcheck="false">
-                      <label for="name">Name</label>
-                    </div>
-                    <div class="information-email">
-                      <input id="email" type="email" spellcheck="false">
-                      <label for="email">Email</label>
-                    </div>
-                  </div>
-                  <input type="submit" value="Get in touch">
-                </form>
-              </div>
-            </li>
-          </ul>
+  <main>
+    <!-- Home Section -->
+    <section id="home" class="section">
+      <div class="hero fade-in">
+        <h1>Your next <br><span class="text-gradient">modern</span> web developer</h1>
+        <p>I build dynamic and responsive web applications with cutting-edge frameworks, delivering end-to-end solutions that combine front-end creativity and back-end logic.</p>
+        <div class="hero-buttons">
+          <a href="#hire" class="cta-button">Hire Me</a>
+          <a href="#skills" class="btn-secondary">Explore My Skills</a>
         </div>
       </div>
-    </div>
-    <ul class="outer-nav">
-      <li class="is-active">Home</li>
-      <li>Works</li>
-      <li>About</li>
-      <li>Contact</li>
-      <li>Hire Me</li>
-    </ul>
-  </div>
+    </section>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-  <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-2.2.4.min.js"><\/script>')</script>
-  <script src="assets/js/functions-min.js"></script>
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+      <h2 class="section-title fade-in">My <span class="text-gradient">Expertise</span></h2>
+      <div class="skills-grid fade-in">
+        <div class="skill-card glass-panel">
+          <div class="skill-card-icon">{ }</div>
+          <h3>Angular Developer</h3>
+          <p>Expert in building dynamic and responsive single-page web applications using Angular.</p>
+        </div>
+        <div class="skill-card glass-panel">
+          <div class="skill-card-icon">/ ></div>
+          <h3>Backend Developer</h3>
+          <p>Creating robust server-side solutions and API integrations for seamless performance using PostgreSQL and MySQL.</p>
+        </div>
+        <div class="skill-card glass-panel">
+          <div class="skill-card-icon">< ></div>
+          <h3>Full Stack Developer</h3>
+          <p>Delivering end-to-end web development, seamlessly combining front-end creativity with solid back-end architecture.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Works Section -->
+    <section id="works" class="section">
+      <h2 class="section-title fade-in">Selected <span class="text-gradient">Work</span></h2>
+      <div class="skills-grid fade-in">
+        <div class="skill-card glass-panel">
+          <h3>Infithra</h3>
+          <p>A comprehensive web platform showcasing expertise in delivering functional and aesthetic digital solutions.</p>
+        </div>
+        <div class="skill-card glass-panel">
+          <h3>Rentalshare</h3>
+          <p>An innovative peer-to-peer rental application built with robust backend logic and a modern user interface.</p>
+        </div>
+        <div class="skill-card glass-panel">
+          <h3>Suvarna</h3>
+          <p>A sophisticated corporate presence focused on seamless user experience and performance optimization.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+      <div class="about-content fade-in">
+        <div class="about-text">
+          <h2>I believe in <br><span class="text-gradient">passion and dedication</span></h2>
+          <p>My career is driven by a deep-rooted passion for technology and a dedication to crafting exceptional digital experiences. I thrive on solving complex problems and continuously learning new paradigms to stay at the forefront of web development.</p>
+        </div>
+        <div class="company-list">
+          <div class="glass-panel">Angular</div>
+          <div class="glass-panel">PostgreSQL</div>
+          <div class="glass-panel">MySQL</div>
+          <div class="glass-panel">Bootstrap</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+      <h2 class="section-title fade-in">Let's <span class="text-gradient">Connect</span></h2>
+      <div class="contact-container fade-in">
+        <div class="contact-info">
+          <h3>Get in Touch</h3>
+          <p style="color: var(--text-muted); margin-bottom: 1rem; font-size: 1.1rem;">
+            Whether you have a question or just want to say hi, I'll try my best to get back to you!
+          </p>
+          <a href="mailto:Officialvyshnavc7@gmail.com">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            Officialvyshnavc7@gmail.com
+          </a>
+          <a href="https://www.linkedin.com/in/vyshnav-c-6637231bb?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" rel="noopener noreferrer">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+            LinkedIn Profile
+          </a>
+          <a href="https://www.instagram.com/thatphenomenal_7_/" target="_blank" rel="noopener noreferrer">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+            Instagram
+          </a>
+          <p style="color: var(--text-muted); margin-top: 2rem;">
+            📍 Kannur, Kerala, India
+          </p>
+        </div>
+        
+        <div id="hire" class="contact-form-container glass-panel">
+          <h3 style="font-size: 1.5rem; margin-bottom: 1.5rem;">Hire Me, You Get Impressed</h3>
+          <form class="contact-form">
+            <div class="form-group">
+              <label for="name" style="color: var(--text-muted); font-size: 0.9rem;">Name</label>
+              <input type="text" id="name" placeholder="John Doe" required>
+            </div>
+            <div class="form-group">
+              <label for="email" style="color: var(--text-muted); font-size: 0.9rem;">Email</label>
+              <input type="email" id="email" placeholder="john@example.com" required>
+            </div>
+            <div class="form-group" style="margin-top: 1rem;">
+              <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 0.5rem;">Services Needed:</p>
+              <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.5rem; margin-bottom: 1rem;">
+                <label style="display: flex; align-items: center; gap: 0.5rem; cursor: pointer; color: var(--text-muted);">
+                  <input type="checkbox"> Web Design
+                </label>
+                <label style="display: flex; align-items: center; gap: 0.5rem; cursor: pointer; color: var(--text-muted);">
+                  <input type="checkbox"> Web Dev
+                </label>
+                <label style="display: flex; align-items: center; gap: 0.5rem; cursor: pointer; color: var(--text-muted);">
+                  <input type="checkbox"> UX Design
+                </label>
+                <label style="display: flex; align-items: center; gap: 0.5rem; cursor: pointer; color: var(--text-muted);">
+                  <input type="checkbox"> Full Stack
+                </label>
+              </div>
+            </div>
+            <button type="submit" class="cta-button" style="width: 100%; margin-top: 1rem;">Get In Touch</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer style="text-align: center; padding: 2rem; border-top: 1px solid var(--glass-border); color: var(--text-muted); margin-top: 4rem;">
+    <p>&copy; 2026 C Vyshnav. All rights reserved.</p>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
 </body>
 
 </html>
